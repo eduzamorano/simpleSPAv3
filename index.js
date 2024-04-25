@@ -76,7 +76,7 @@ pokeInfoDiv.innerHTML = `
 }
 function notFound(){
 var pokeInfoDiv = document.getElementById('pokeInfoPage');
-pokeInfoDiv.innerHTML = '<b><h2>Pokémon no encontrado!</h2></b><button onclick="llamarPoke()">Buscar</button>';
+pokeInfoDiv.innerHTML = '<b><h2>Pokémon no encontrado!</h2></b><button onclick="llamarPoke()">Buscar</button><br><br><img src="img/notfound.png" alt="error">';
 }
 
 function recargar(){
