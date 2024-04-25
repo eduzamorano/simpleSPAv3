@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple SPA API v3</title>
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#pokeInfo">PokeInfo</a>
+        <a href="#about">Acerca</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <div id="content">
+        <div id="homePage">Página de inicio</div>
+        <div id="aboutPage" class="hidden">Somos una empresa de tecnología Regional</div>
+        <div id="contactPage" class="hidden">Envíe un correo a contacto@tech.cl</div>
+        <div id="notFoundPage" class="hidden">Página No Encontrada!</div>
+        <div id="pokeInfoPage" class="hidden"> <button onclick="llamarPoke()">Buscar</button> </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
