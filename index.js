@@ -68,7 +68,7 @@ function llamarPoke() {
 function displayUser(user) {
 var pokeInfoDiv = document.getElementById('pokeInfoPage');
 pokeInfoDiv.innerHTML = `
-<p>Nueva Búsqueda<p><button onclick="llamarPoke()">Buscar</button>
+<p>Nueva Búsqueda<p><button class="btn btn-primary" onclick="llamarPoke()">Buscar</button>
 <b><p>Nombre: ${user.name}</p></b>
 <b><p>Índice: ${user.id}</p></b>
 <p><img src="${user.sprites.other.home.front_default}" alt="User Image"></p>
@@ -76,7 +76,7 @@ pokeInfoDiv.innerHTML = `
 }
 function notFound(){
 var pokeInfoDiv = document.getElementById('pokeInfoPage');
-pokeInfoDiv.innerHTML = '<b><h2>Pokémon no encontrado!</h2></b><button onclick="llamarPoke()">Buscar</button><br><br><img src="img/notfound.png" alt="error">';
+pokeInfoDiv.innerHTML = '<b><h2>Pokémon no encontrado!</h2></b><button class="btn btn-primary" onclick="llamarPoke()">Buscar</button><br><br><img src="img/notfound.png" alt="error">';
 }
 
 function recargar(){
